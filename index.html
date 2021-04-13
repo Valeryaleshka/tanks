@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Battle City</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <div class="paused_screen hiden">
+    <p>PAUSE</p>
+       <p>
+    Press 'P' to resume</p>
+  </div>
+  <!--<div class="main_menu">
+    <img src="./img/battle_city.png" alt="logo">
+    <p>START GAME</p>
+  </div>-->
+  <div class="game_over hiden"></div>
+  <main>      
+    <section id="game-field">     
+      <div id="game-map">
+      </div>    
+    </section>
+
+    <section id="legend">      
+      <ul class="legend-list">       
+        <li>
+          
+          <div id='enemies_count' class="enemies_count"></div>
+        </li >
+        <li class='players_lives'>
+          <p>P1 </p>
+          <div id='players_lives_count' class="players_lives_count"></div>
+        </li>
+        <li class='current_level'>
+          <div class='flag'></div>
+          <p>1</p>
+        </li>
+      
+      </ul>
+    </section>
+  </main>
+
+
+  <script src="js/vendor/jquery-3.3.1.min.js"></script>  
+  <script type="module" src="js/map.js"></script>
+  <script type="module" src="js/main.js"></script>
+  <script type="module" src="js/logic.js"></script>
+  <script type="module" src="js/keyboard.js"></script>
+  <script type="module" src="js/tank.js"></script>
+  <script type="module" src="js/settings.js"></script>
+  <script type="module" src="js/redux/createStore.js"></script>
+  <script type="module" src="js/redux/rootReducer.js"></script>
+  <script type="module" src="js/redux/types.js"></script> 
+  <script type="module" src="js/redux/actionCreater.js"></script> 
+  <script type="module" src="js/enemies.js"></script> 
+</body>
+
+</html>
